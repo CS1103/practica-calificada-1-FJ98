@@ -68,7 +68,6 @@ bool UTEC::TwoLinkedList::IsEmpty2() {
                     //for(int i=0;i<10;i++){
                       //  nod0->push_back(i);
                     //}
-
                     std::string texto = "el numero es:"+std::to_string(value);
 
                     return texto;
@@ -121,7 +120,8 @@ bool UTEC::TwoLinkedList::IsEmpty2() {
     void TwoLinkedList::save() {
         std::ofstream file;
         std::string line;
-        while(getline(file,line))
+
+        while(getline(file, line))
         {
             std::stringstream linestream(line);
             std::string value;
@@ -131,7 +131,6 @@ bool UTEC::TwoLinkedList::IsEmpty2() {
                 std::cout << "Valor: (" << value << ")\n";
             }
             std::cout << "Linea finalizada" << std::endl;
-
         }
     }
 
