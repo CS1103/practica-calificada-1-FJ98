@@ -7,7 +7,7 @@
 #include "TwoLinkedList.h"
 
 using namespace std;
-
+using namespace UTEC;
 int main() {
 
     UTEC::TwoLinkedList tll;

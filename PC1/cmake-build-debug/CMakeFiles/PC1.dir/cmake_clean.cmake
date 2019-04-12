@@ -2,7 +2,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PC1.dir/main.cpp.o"
   "CMakeFiles/PC1.dir/TwoLinkedList.cpp.o"
   "PC1.pdb"
-  "PC1"
+  "PC1.exe"
+  "libPC1.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
