@@ -91,9 +91,13 @@ bool UTEC::TwoLinkedList::IsEmpty2() {
         return std::string();
     }
 
-    std::string TwoLinkedList::merge() {
-
-        return std::string();
+    std::string TwoLinkedList::merge(int value) {
+        Node* nuevo = tail;
+        if(nuevo->value==value){
+            return "Operacion Duplicada";
+        }else{
+            return "Operacion Exitosa";
+        }
     }
 
     bool TwoLinkedList::is_merged() {

@@ -54,7 +54,7 @@ public:
     void push_back2(int value);
     bool IsEmpty1();
     bool IsEmpty2();
-    std::string merge();
+    std::string merge(int value);
     bool is_merged();
     std::string getlist(int value);
     Node* search(int x);
