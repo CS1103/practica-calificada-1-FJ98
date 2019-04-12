@@ -1,6 +1,8 @@
 // Created by ruben on 4/12/19.
 #include "TwoLinkedList.h"
 #include <iostream>
+#include <sstream>
+#include <fstream>
 namespace UTEC{
 UTEC::Node::Node() {}
 
@@ -117,7 +119,20 @@ bool UTEC::TwoLinkedList::IsEmpty2() {
     }
 
     void TwoLinkedList::save() {
+        std::ofstream file;
+        std::string line;
+        while(getline(file,line))
+        {
+            std::stringstream linestream(line);
+            std::string value;
 
+            while(getline(linestream,value,','))
+            {
+                std::cout << "Valor: (" << value << ")\n";
+            }
+            std::cout << "Linea finalizada" << std::endl;
+
+        }
     }
 
     void TwoLinkedList::load() {

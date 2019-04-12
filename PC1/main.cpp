@@ -33,7 +33,7 @@ int main() {
     assert(tll.getlist(0) == string());
 
     auto resul1t1 = tll.merge(66);
-    assert(result1 == string("Operación Exitosa"));
+    assert(resul1t1 == string("Operación Exitosa"));
 
 
     // Valores unidos
